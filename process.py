@@ -32,6 +32,30 @@ title = soup.find("p", "title").get_text()
 
 subtitle = soup.find("p", "subtitle").get_text()
 
+######
+# TeX escaping
+tex_replacements = [
+    (u'{', ur'\{'),
+    (u'}', ur'\}'),
+    (u'[', ur'{[}'),
+    (u']', ur'{]}'),
+    (u'\\', ur'\textbackslash{}'),
+    (u'$', ur'\$'),
+    (u'%', ur'\%'),
+    (u'&', ur'\&'),
+    (u'#', ur'\#'),
+    (u'_', ur'\_'),
+    (u'~', ur'\textasciitilde{}'),
+    (u'^', ur'\textasciicircum{}'),
+]
+
+tex_mapping = {ord(char):rep for char, rep in tex_replacements}
+
+def tex_escape(txt):
+    """Convert txt to a LaTeX-safe string"""
+    return unicode(txt).translate(tex_mapping)
+
+
 class TagStrategy(object):
     """Base class; given a soup tag, process all subtags
     """
@@ -69,7 +93,7 @@ class TagStrategy(object):
 
         if not tags:
             # We're at a leaf; return the wrapped string.
-            return self.wrap(unicode(parent_tag.string))
+            return self.wrap(tex_escape(parent_tag.string))
 
         for tag in parent_tag():
                 # skip empties
