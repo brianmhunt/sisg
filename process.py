@@ -32,7 +32,7 @@ title = soup.find("p", "title").get_text()
 
 subtitle = soup.find("p", "subtitle").get_text()
 
-for tag in soup.body.find_all(['p','h1','h2','h3','h4','h5','h6']):
+for tag in soup.body.find_all(['p','h1','h2','h3','h4','h5','h6', 'ol', 'li']):
     # skip empties 
     if not tag.get_text().strip():
         continue
