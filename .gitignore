@@ -1,1 +1,7 @@
 *.pyc
+*.log
+*.aux
+*.pdf
+*.tex
+*.out
+

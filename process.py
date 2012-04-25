@@ -13,25 +13,6 @@ parser.add_argument('outfile', nargs='?', type=argparse.FileType('w'),
 
 args = parser.parse_args()
 
-html = args.infile.read().decode('utf8')
-
-soup = BeautifulSoup(html)
-
-header = title = subtitle = paragraphs = None
-
-# First <div> of the document is the feader
-header = soup.div.get_text()
-
-# Div tags are headers or footers.
-for tag in soup.find_all('div'):
-    tag.extract()
-
-# There is no footer, but if there was it'd be the last div in the document
-
-title = soup.find("p", "title").get_text()
-
-subtitle = soup.find("p", "subtitle").get_text()
-
 ######
 # TeX escaping
 tex_replacements = [
@@ -56,6 +37,10 @@ def tex_escape(txt):
     return unicode(txt).translate(tex_mapping)
 
 
+def tex_environment(name, txt):
+    """Given environment and text, put text inside e.g. \\begin{quote}..."""
+    return "%%\n\\begin{%(name)s}%%\n\t%(txt)s%%\n\\end{%(name)s}%%\n" % locals()
+
 class TagStrategy(object):
     """Base class; given a soup tag, process all subtags
     """
@@ -71,7 +56,7 @@ class TagStrategy(object):
 
     @classmethod
     def register_all_strategies(cls):
-        print "Registering: %s" % cls.__name__
+        logging.debug("Registering: %s" % cls.__name__)
 
         try:
             cls.handlers[cls.tag] = cls
@@ -90,12 +75,15 @@ class TagStrategy(object):
         rst = ""
 
         tags = parent_tag() # get list of descendents
+        tc = len(tags)
+        tn = parent_tag.name
+        logging.debug("<%(tn)s><%(tc)s></%(tn)s>\n" % locals())
 
         if not tags:
             # We're at a leaf; return the wrapped string.
             return self.wrap(tex_escape(parent_tag.string))
 
-        for tag in parent_tag():
+        for tag in parent_tag(recursive=False):
                 # skip empties
             if not tag.get_text().strip():
                 continue
@@ -109,7 +97,6 @@ class TagStrategy(object):
 
     @classmethod
     def factory(cls, tag):
-        # print "Handlers: %s" % TagStrategy.handlers
         return TagStrategy.handlers[tag.name](tag)
 
 
@@ -117,7 +104,7 @@ class BodyStrategy(TagStrategy):
     tag = 'body'
 
     def wrap(self, txt):
-        return "\\begin{document}\n%s\n\\end{document}" % txt
+        return tex_environment("document", txt)
     
 class PStrategy(TagStrategy):
     tag = 'p'
@@ -129,29 +116,35 @@ class SpanStrategy(TagStrategy):
     tag = 'span'
 
     def wrap(self, txt):
-        return txt
+        return " %s " % txt.strip()
 
 class H1Strategy(TagStrategy):
-    tag = 'h1'
+    tag = 'h1' # Part
+
+    def wrap(self, txt):
+        return "%%\n\part{%s}%%\n" % txt
 
 class H2Strategy(TagStrategy):
     tag = 'h2'
 
 class H3Strategy(TagStrategy):
-    tag = 'h3'
+    tag = 'h3' # Article
+
+    def wrap(self, txt):
+        return "%%\n\section{%s}%%\n" % txt
 
 class H6Strategy(TagStrategy):
     tag = 'h6'
 
     def wrap(self, txt):
-        return "\n\\textbf{%s}%%\n" % txt
+        return tex_environment("quote", txt)
 
 class OlStrategy(TagStrategy):
     tag = 'ol'
 
     def wrap(self, txt):
         # FIXME: attr start = 1
-        return "\\begin{enumerate}%%\n%s\n\\end{enumerate}%%\n" % txt
+        return tex_environment("enumerate", txt)
 
 class LiStrategy(TagStrategy):
     tag = 'li'
@@ -183,12 +176,28 @@ class AStrategy(TagStrategy):
 class HrStrategy(TagStrategy):
     tag = 'hr'
 
-print BodyStrategy().translate(soup.body)
+soup = BeautifulSoup(args.infile.read().decode('utf8'))
+header = title = subtitle = paragraphs = None
 
-print repr(u"""----------\n
-Header: %(header)s
-Title: %(title)s
-Subtitle: %(subtitle)s"""
- % locals())
+# First <div> of the document is the feader
+header = soup.div.get_text()
+# ignore footer.
+
+# Div tags are headers or footers.
+for tag in soup.find_all('div'):
+    tag.extract()
+
+# There is no footer, but if there was it'd be the last div in the document
+
+title = soup.find("p", "title").get_text()
+subtitle = soup.find("p", "subtitle").get_text()
+
+args.outfile.write("""%% !TEX TS-program = XeLaTeX
+%% !TEX encoding = UTF-8 Unicode
+
+\documentclass[12pt]{sisg}
+
+%s
+""" % BodyStrategy().translate(soup.body).encode('utf8'))
 
 

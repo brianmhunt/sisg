@@ -152,41 +152,46 @@
 %   Large font
 %   Reset section (article) number
 \renewcommand{\partnamefont}{\normalfont\headingfont%
-    \large\color{DarkBlue}}
-    \renewcommand{\parttitlefont}{\normalfont\headingfont%
-        \large\color{DarkBlue}}
-        \renewcommand{\partnumfont}{}
-        \def\partnamenum{\partnamefont\ }
-        \renewcommand*{\printparttitle}[1]{%
-            \parttitlefont ##1\bigskip\hrule}
-            % see eg memman.pdf s. 6.3
-            \renewcommand{\midpartskip}{\par\medskip}
-            \renewcommand*{\beforepartskip}{\null\medskip}
-            \renewcommand*{\afterpartskip}{\vskip\medskip}
+    \large\color{DarkBlue}%
+}
+\renewcommand{\parttitlefont}{\normalfont\headingfont%
+    \large\color{DarkBlue}%
+}
+\renewcommand{\partnumfont}{}
+\def\partnamenum{\partnamefont\ }
+\renewcommand*{\printparttitle}[1]{%
+    \parttitlefont \##1\bigskip\hrule%
+}
+% see eg memman.pdf s. 6.3
+\renewcommand{\midpartskip}{\par\medskip}
+\renewcommand*{\beforepartskip}{\null\medskip}
+\renewcommand*{\afterpartskip}{\vskip\medskip}
 
-            % No new page.
-            \renewcommand*{\partpageend}{\medskip}
+% No new page.
+\renewcommand*{\partpageend}{\medskip}
 
-            % - Articles -
-            %   Tex style: \section 
-            %   Color: Light blue
-            %   Center
-            %   Regular font
+% - Articles -
+%   Tex style: \section 
+%   Color: Light blue
+%   Center
+%   Regular font
 
-            % See memman p. 105ff
-            %\setsecnumformat{%
-                % \hspace{-\gutenNparindent}%
-                    %    \textbf{\thesection{}.\space}%
-                    %}
-                    \renewcommand*{\thesection}{Article \arabic{section}.}
-                    \setsecheadstyle{\color{LightBlue}\bfseries\centering%
-                        \stepcounter{sbc-article}%
-                            \setcounter{parnum}{0}%
-                            \space}
-                            % Hanging: see memman p. 106
+% See memman p. 105ff
+%\setsecnumformat{%
+% \hspace{-\gutenNparindent}%
+%    \textbf{\thesection{}.\space}%
+%}
+\newcounter{parnum}
+\renewcommand*{\thesection}{Article \arabic{section}.}
+\setsecheadstyle{\color{LightBlue}\bfseries\centering%
+    \stepcounter{sbc-article}%
+        \setcounter{parnum}{0}%
+        \space%
+}
+% Hanging: see memman p. 106
 
-                            % Commentary
-                            \renewenvironment{quote}
+% Commentary
+\renewenvironment{quote}
 {\begin{adjustwidth}{2em}{2em}\small\commentaryfont%
     \medskip\color{Gray}}
 {\end{adjustwidth}}
