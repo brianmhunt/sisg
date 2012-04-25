@@ -110,6 +110,14 @@ class PStrategy(TagStrategy):
     tag = 'p'
 
     def wrap(self, txt):
+        classes = self.tag['class']
+
+        if 'title' in classes:
+            return "\\titlep{%s}%%\n%%\n" % txt
+
+        elif 'subtitle' in classes:
+            return "\\subtitlep{%s}%%\n%%\n" % txt
+
         return "\par{}%s\n\n" % txt
 
 class SpanStrategy(TagStrategy):
@@ -143,8 +151,9 @@ class OlStrategy(TagStrategy):
     tag = 'ol'
 
     def wrap(self, txt):
-        # FIXME: attr start = 1
-        return tex_environment("enumerate", txt)
+        # FIXME: attr start = 1 for depth
+        reset = '\t\setcounter{enumi}{%s}%%\n' % self.tag.get('start', '1')
+        return tex_environment("enumerate", reset + txt)
 
 class LiStrategy(TagStrategy):
     tag = 'li'
@@ -173,8 +182,19 @@ class TdStrategy(TagStrategy):
 class AStrategy(TagStrategy):
     tag = 'a'
 
+    def wrap(self, txt):
+        if not hasattr(self.tag, 'href') or self.tag['href'] == "#":
+            return txt
+
+        return "\href{\"%s\"}{\"%s\"}" % (self.tag['href'], txt)
+
 class HrStrategy(TagStrategy):
+    "New page"
     tag = 'hr'
+
+    def wrap(self, txt):
+        # logging.warning("Got hr tag: %s" % self.tag)
+        return "\n%%\n\cleardoublepage%%\n%%\n%s" % txt
 
 soup = BeautifulSoup(args.infile.read().decode('utf8'))
 header = title = subtitle = paragraphs = None

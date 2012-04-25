@@ -1,4 +1,5 @@
 *.pyc
+*.toc
 *.log
 *.aux
 *.pdf

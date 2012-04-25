@@ -24,6 +24,14 @@
 \RequirePackage{xltxtra,lineno,hyperref,color}
 
 %
+% Colors
+%
+\definecolor{DarkBlue}{RGB}{  23,  54,  93}
+\definecolor{LightBlue}{RGB}{ 79, 129, 189}
+\definecolor{Gray}{RGB}{     128, 128, 128}
+\definecolor{Orange}{RGB}{   230, 145,  56}
+
+%
 % Draft
 % 1: Unique identifier of the draft
 %
@@ -50,10 +58,10 @@
 }
 
 %
-% Cover page
-% 1: Subtitle
+% Title 
+% 1: title name
 %
-\newcommand{\CoverPage}[2]{
+\newcommand{\titlep}[1]{
 	\pagestyle{empty}%
 	\vspace*{5.75cm}%
 	{ % Title	
@@ -63,6 +71,9 @@
 		\noindent{}%
 		International Tribunal for State Financial Administration%
 	}
+} % \titlep
+
+\newcommand{\subtitlep}[1]{
 	\vspace{0.4cm}%
 	{ % Subtitle
 		\color{LightBlue}%
@@ -86,7 +97,7 @@
     \noindent Copyright \copyright 2012 International Law Association.\par%
     %
     \medskip%
-    \includegraphics[scale=0.5]{cc-by.pdf}\par%
+    % \includegraphics[scale=0.5]{cc-by.pdf}\par%
     \noindent%
     This work is licensed under a Creative Commons Attribution 3.0 Unported
     License. To view a copy of this license, visit
@@ -94,19 +105,12 @@
     or send a letter to Creative Commons, 171 Second Street, Suite 300,
     San Francisco, California, 94105, USA.\par%
     This edition was generated in PDF on \today.\par%
-    \ifthenelse{\equal{#2}{}}{}{%
-        The master version of this document can be found at: \url{#2}.\par%
-    }
-    
-
-
 	\newpage%
     \tableofcontents*%
     \newpage%
 	\pagestyle{SBC}% Presumably this is the old style of page
 	\setcounter{page}{1}
-} % CoverPage
-
+} % \subtitlep
 
 
 %
@@ -122,13 +126,6 @@
 % see memman.pdf p. 50
 \midsloppy
 
-%
-% Colors
-%
-\definecolor{DarkBlue}{RGB}{  23,  54,  93}
-\definecolor{LightBlue}{RGB}{ 79, 129, 189}
-\definecolor{Gray}{RGB}{     128, 128, 128}
-\definecolor{Orange}{RGB}{   230, 145,  56}
 
 
 %
