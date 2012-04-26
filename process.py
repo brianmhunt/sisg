@@ -37,9 +37,9 @@ def tex_escape(txt):
     return unicode(txt).translate(tex_mapping)
 
 
-def tex_environment(name, txt):
+def tex_environment(name, txt, opts=""):
     """Given environment and text, put text inside e.g. \\begin{quote}..."""
-    return "%%\n\\begin{%(name)s}%%\n\t%(txt)s%%\n\\end{%(name)s}%%\n" % locals()
+    return "%%\n\\begin{%(name)s}%(opts)s%%\n\t%(txt)s%%\n\\end{%(name)s}%%\n" % locals()
 
 class TagStrategy(object):
     """Base class; given a soup tag, process all subtags
@@ -173,14 +173,31 @@ class BrStrategy(TagStrategy):
 class TableStrategy(TagStrategy):
     tag = 'table'
 
+    def wrap(self, txt):
+        return tex_environment("tabularx", txt, 
+                "{\\linewidth}{p{.33\linewidth} p{.33\linewidth} p{.33\linewidth}}")
+
 class TBodyStrategy(TagStrategy):
     tag = 'tbody'
 
 class TrStrategy(TagStrategy):
     tag = 'tr'
 
+    def wrap(self, txt):
+        return "%s \\\\%%\n" % txt
+
 class TdStrategy(TagStrategy):
     tag = 'td'
+
+    def wrap(self, txt):
+        # is_last is true if this is the last <td> tag in the row
+        next_tag = self.tag.next_sibling
+        if next_tag:
+            is_last = next_tag.name != 'td'
+        else:
+            is_last = True
+
+        return "%s %s%%\n" % (txt, "" if is_last else "& ")
 
 class AStrategy(TagStrategy):
     tag = 'a'
