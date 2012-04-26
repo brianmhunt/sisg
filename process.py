@@ -124,7 +124,7 @@ class SpanStrategy(TagStrategy):
     tag = 'span'
 
     def wrap(self, txt):
-        return " %s " % txt.strip()
+        return txt
 
 class H1Strategy(TagStrategy):
     tag = 'h1' # Part
@@ -134,6 +134,9 @@ class H1Strategy(TagStrategy):
 
 class H2Strategy(TagStrategy):
     tag = 'h2'
+
+    def wrap(self, txt):
+        return "%%\n\section*{%s}%%\n" % txt
 
 class H3Strategy(TagStrategy):
     tag = 'h3' # Article
@@ -196,21 +199,26 @@ class HrStrategy(TagStrategy):
         # logging.warning("Got hr tag: %s" % self.tag)
         return "\n%%\n\cleardoublepage%%\n%%\n%s" % txt
 
+class SupStrategy(TagStrategy):
+    tag = 'sup'
+
+class StyleStrategy(TagStrategy):
+    tag = 'style'
+
+class DivStrategy(TagStrategy):
+    tag = 'div'
+
 soup = BeautifulSoup(args.infile.read().decode('utf8'))
+content = soup.find(id='contents')
 header = title = subtitle = paragraphs = None
 
 # First <div> of the document is the feader
 header = soup.div.get_text()
+# There is no footer, but if there was it'd be the last div in the document
 # ignore footer.
 
-# Div tags are headers or footers.
-for tag in soup.find_all('div'):
-    tag.extract()
-
-# There is no footer, but if there was it'd be the last div in the document
-
-title = soup.find("p", "title").get_text()
-subtitle = soup.find("p", "subtitle").get_text()
+title = content.find("p", "title").get_text()
+subtitle = content.find("p", "subtitle").get_text()
 
 args.outfile.write("""%% !TEX TS-program = XeLaTeX
 %% !TEX encoding = UTF-8 Unicode
@@ -218,6 +226,6 @@ args.outfile.write("""%% !TEX TS-program = XeLaTeX
 \documentclass[12pt]{sisg}
 
 %s
-""" % BodyStrategy().translate(soup.body).encode('utf8'))
+""" % BodyStrategy().translate(content).encode('utf8'))
 
 

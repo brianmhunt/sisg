@@ -5,4 +5,4 @@
 *.pdf
 *.tex
 *.out
-
+.DS_Store
