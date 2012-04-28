@@ -20,7 +20,7 @@ $if(graphics)$
 $endif$
 \hypersetup{colorlinks=true,pdfauthor={$author-meta$},xetex,unicode=false,%
     pdftitle={$title-meta$},bookmarks=true,breaklinks=true,pdfborder={0,0,0},%
-    setpagesize=false}
+    setpagesize=false,urlcolor=blue,linkcolor=blue}
 $if(strikeout)$
 \usepackage[normalem]{ulem}
 % avoid problems with \sout in headers with hyperref:
@@ -47,19 +47,21 @@ $if(date)$
 \date{$date$}
 $endif$
 
+\asdraft
+
 \begin{document}
-$if(title)$
-\maketitle
-$endif$
+%$if(title)$
+%\maketitle
+%$endif$
 
 $for(include-before)$
 $include-before$
 
 $endfor$
-$if(toc)$
-\tableofcontents
 
-$endif$
+\titlep{}
+\subtitlep{$title$}
+
 $body$
 
 $for(include-after)$

@@ -6,9 +6,9 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{sisg}[2012/04/25 SISG extension to the memoir class]
 
-\DeclareOption{draft}{
-} % 'draft' option
-
+%
+% Draft options
+%
 \DeclareOption*{%
 	\PassOptionsToClass{\CurrentOption}{memoir}%
 }
@@ -24,19 +24,7 @@
 
 \RequirePackage{xltxtra,lineno,hyperref,color,fontspec,xunicode}
 
-%
-% Colors
-%
-\definecolor{DarkBlue}{RGB}{  23,  54,  93}
-\definecolor{LightBlue}{RGB}{ 79, 129, 189}
-\definecolor{Gray}{RGB}{     128, 128, 128}
-\definecolor{Orange}{RGB}{   230, 145,  56}
-
-%
-% Draft
-% 1: Unique identifier of the draft
-%
-\newcommand{\asDraft}[1]{
+\newcommand{\asdraft}[1]{
     % draft headers and footers
     \makeoddhead{SBC}{}%
         {%
@@ -49,20 +37,30 @@
     }
 
     % Configure comment lines and line numbering
-    \setlength{\textwidth}{0.618033\textwidth}
+    \setlength{\textwidth}{0.618\textwidth}
     \def\PrintCommentLine{\kern1.1\textwidth\rule{0.618\textwidth}{1pt}}
     \def\makeLineNumberLeft{% 
       \hss\linenumberfont\LineNumber\hskip\linenumbersep%
       \hbox to 0pt{\PrintCommentLine\hss}}
     \linenumbers
     \leftlinenumbers
-}
+} % 'linenos' option
+
+
+
+%
+% Colors
+%
+\definecolor{DarkBlue}{RGB}{  23,  54,  93}
+\definecolor{LightBlue}{RGB}{ 79, 129, 189}
+\definecolor{Gray}{RGB}{     128, 128, 128}
+\definecolor{Orange}{RGB}{   230, 145,  56}
 
 %
 % Title 
 % 1: title name
 %
-\newcommand{\titlep}[1]{
+\newcommand{\titlep}{
 	\pagestyle{empty}%
 	\vspace*{5.75cm}%
 	{ % Title	
@@ -136,6 +134,9 @@
 \setlength{\parindent}{1em}
 
 % Counters
+% section # = article #
+\counterwithout{section}{chapter}
+% 
 \newcounter{sbc-article}
 \setcounter{sbc-article}{1}
 
@@ -150,29 +151,38 @@
 %   Left align
 %   Large font
 %   Reset section (article) number
-\renewcommand{\partnamefont}{\normalfont\headingfont%
+\renewcommand{\chapnamefont}{\normalfont\headingfont%
     \large\color{DarkBlue}%
 }
-\renewcommand{\parttitlefont}{\normalfont\headingfont%
+
+\renewcommand{\chaptitlefont}{\normalfont\headingfont%
     \large\color{DarkBlue}%
 }
-\renewcommand{\partnumfont}{}
-\def\partnamenum{\partnamefont\ }
-\renewcommand*{\printparttitle}[1]{%
-    \parttitlefont \##1\bigskip\hrule%
+
+\renewcommand{\chapnumfont}{}
+\renewcommand{\chaptername}{Part\space}
+
+\def\chapternamenum{\chapnamefont\ }
+
+\renewcommand*{\printchaptertitle}[1]{%
+    \chaptitlefont #1\bigskip\hrule%
 }
+
 % see eg memman.pdf s. 6.3
-\renewcommand{\midpartskip}{\par\medskip}
-\renewcommand*{\beforepartskip}{\null\medskip}
-\renewcommand*{\afterpartskip}{\vskip\medskip}
+%\renewcommand{\midchapskip}{\par\medskip}
+%\renewcommand*{\beforechapskip}{\null\medskip}
+%\renewcommand*{\afterchapskip}{\vskip\medskip}
+\setlength{\midchapskip}{\baselineskip}
+\setlength{\beforechapskip}{\baselineskip}
+\setlength{\afterchapskip}{\baselineskip}
 
 % No new page.
-\renewcommand*{\partpageend}{\medskip}
+% \renewcommand*{\chappageend}{\medskip}
 
 % - Articles -
 %   Tex style: \section 
 %   Color: Light blue
-%   Center
+%   Cente
 %   Regular font
 
 % See memman p. 105ff
@@ -198,8 +208,8 @@
 % Table of Contents
 % See memman p.156ff
 % \renewcommand*{\cftchaptername}{\chaptername~}
-\renewcommand*{\cftpartname}{Part\space} % FIXME??
-\renewcommand*{\cftchaptername}{Chapter\space} % FIXME??
+\renewcommand*{\cftchaptername}{Part\space} % FIXME??
+% \renewcommand*{\cftchaptername}{Chapter\space} % FIXME??
 
 \renewcommand*{\cftsectionname}{}
 \renewcommand*{\cftsectionaftersnum}{}
@@ -207,12 +217,12 @@
 \renewcommand*{\cftsubsectionname}{} 
 \renewcommand*{\cftsubsectionaftersnum}{.}
 
-\cftsetindents{part}{3em}{3.2em}
-\cftsetindents{subsection}{3em}{5.8em}
+\cftsetindents{chapter}{3em}{3.2em}
 \cftsetindents{section}{1em}{5.5em}
+\cftsetindents{subsection}{1em}{5.5em}
 
 \maxtocdepth{subsection}%
-\setsecnumdepth{subsection}%
+\setsecnumdepth{section}%
 
 % Page styles
 \copypagestyle{SBC}{plain}
