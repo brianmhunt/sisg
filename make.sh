@@ -21,3 +21,4 @@ pandoc sisg.txt  -t latex --chapters --template  -v author=$AUTHOR../pandoc.late
 
 # make pdf
 xelatex sisg
+

@@ -24,7 +24,11 @@
 
 \RequirePackage{xltxtra,lineno,hyperref,color,fontspec,xunicode}
 
-\newcommand{\asdraft}[1]{
+%
+% Draft
+% 1: revision
+%
+\newcommand{\asdraft}[2]{
     % draft headers and footers
     \makeoddhead{SBC}{}%
         {%
@@ -33,7 +37,7 @@
         }{}
 
     \makeoddfoot{SBC}{\tiny Page \thepage~of \thelastpage}{}{%
-            \color{Gray}\fbox{\tiny#1}%
+        \color{Gray}\fbox{\tiny \parbox{1.75cm}{\centering rev. #1\\\today}}%
     }
 
     % Configure comment lines and line numbering
@@ -136,6 +140,7 @@
 % Counters
 % section # = article #
 \counterwithout{section}{chapter}
+\counterwithout{table}{chapter}
 % 
 \newcounter{sbc-article}
 \setcounter{sbc-article}{1}

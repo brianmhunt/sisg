@@ -47,7 +47,7 @@ $if(date)$
 \date{$date$}
 $endif$
 
-\asdraft
+\asdraft{$version$}
 
 \begin{document}
 %$if(title)$
