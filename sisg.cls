@@ -13,6 +13,7 @@
 	\PassOptionsToClass{\CurrentOption}{memoir}%
 }
 
+
 \ProcessOptions\relax
 
 \LoadClass{memoir}
@@ -21,7 +22,7 @@
 %    graphicx,pdflscape,geometry,wallpaper,todonotes,,
 %    }
 
-\RequirePackage{xltxtra,lineno,hyperref,color}
+\RequirePackage{xltxtra,lineno,hyperref,color,fontspec,xunicode}
 
 %
 % Colors
@@ -116,6 +117,7 @@
 %
 % Fonts
 %
+\defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
 \setmainfont{Minion Pro}
 \newfontfamily\headingfont{Minion Pro Semibold}
 \newfontfamily\commentaryfont{Gentium Basic}

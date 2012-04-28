@@ -1,23 +1,4 @@
-\documentclass[12pt]{sisg}
-\usepackage{amssymb,amsmath}
-\usepackage{ifxetex,ifluatex}
-\ifxetex
-  \usepackage{fontspec,xltxtra,xunicode}
-  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
-  \newcommand{\euro}{€}
-$if(mainfont)$
-  \setmainfont{$mainfont$}
-$endif$
-$if(sansfont)$
-  \setsansfont{$sansfont$}
-$endif$
-$if(monofont)$
-  \setmonofont{$monofont$}
-$endif$
-$if(mathfont)$
-  \setmathfont{$mathfont$}
-$endif$
-\fi
+\documentclass[12pt,oneside]{sisg}
 $if(tables)$
 \usepackage{ctable}
 \usepackage{float} % provides the H option for float placement
@@ -37,17 +18,9 @@ $if(graphics)$
 \let\Oldincludegraphics\includegraphics
 \renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=\maxwidth]{#1}}
 $endif$
-\ifxetex
-  \usepackage[setpagesize=false, % page size defined by xetex
-              unicode=false, % unicode breaks when used with xetex
-              xetex,
-              bookmarks=true,
-              pdfauthor={$author-meta$},
-              pdftitle={$title-meta$},
-              colorlinks=true,
-              linkcolor=blue]{hyperref}
-\fi
-\hypersetup{breaklinks=true, pdfborder={0 0 0}}
+\hypersetup{colorlinks=true,pdfauthor={$author-meta$},xetex,unicode=false,%
+    pdftitle={$title-meta$},bookmarks=true,breaklinks=true,pdfborder={0,0,0},%
+    setpagesize=false}
 $if(strikeout)$
 \usepackage[normalem]{ulem}
 % avoid problems with \sout in headers with hyperref:
@@ -56,7 +29,7 @@ $endif$
 $if(subscript)$
 \newcommand{\textsubscr}[1]{\ensuremath{_{\scriptsize\textrm{#1}}}}
 $endif$
-\setlength{\emergencystretch}{3em}  % prevent overfull lines
+% \setlength{\emergencystretch}{3em}  % prevent overfull lines
 $if(verbatim-in-note)$
 \VerbatimFootnotes % allows verbatim text in footnotes
 $endif$
