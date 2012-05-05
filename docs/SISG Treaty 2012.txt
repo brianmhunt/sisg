@@ -1,5 +1,4 @@
-﻿Title: Tribunal for International Lending
-Subtitle: Statute of the Tribunal
+﻿Title: Statute of the Tribunal
 Notice: WORKING COPY — NOT FOR DISTRIBUTION — PRIVATE AND CONFIDENTIAL CONTENT NOT ENDORSED BY THE ILA, THE SISG OR ANY MEMBER THEREOF
 Disclaimer: This work is not a completed or approved document endorsed by the officers or members of the Sovereign Insolvency Study Group. The composition of any related or derivative work of the SISG may differ significantly from this document.
 Revision: E
@@ -160,6 +159,8 @@ Revision: E
 > 
 > ------------------------------------------------------------------------------------
 Table: List of forums for the settlement of international disputes.
+
+
 
 
 > A treaty has been chosen as the mechanism for illuminating how one may codify the principles of sovereign bankruptcy because of the relative clarity and concision available. Perhaps the most challenging practical issue is that for any mechanism to be effective the United States must almost certainly ratify the instrument. There are a number of mechanisms that may serve in the place of a treaty (e.g. model law, amending articles of the IMF or UN, contract, and bilateral treaties); these alternatives are beyond the scope of this document.
@@ -686,6 +687,8 @@ No Preference Between Classes
 
 
 No Class shall be given treatment preferential to another Class except as one may have a priority over the other as set out in the Rules.
+
+
 > Principles may be set out here or in the Rules with respect to priorities, within the bounds of which the Rules may modify.
 
 
@@ -709,6 +712,8 @@ Stay on creditor executions
 
 
     c. more than 50 per cent by nominal principal amount of the holders of plan claims have approved the stay.
+
+
 > The particulars of the stay proposed in Article 5 of the Interim Report at page 33.
 
 
@@ -880,6 +885,8 @@ Rules of procedure
 
 Standing
 --------
+
+
 > As a class proceeding and financial administration regime, efficiency is of paramount concern. One way to make the process more efficient is to restrict the standing (i.e. who may raise issues before the tribunal).
 
 
@@ -905,6 +912,8 @@ Standing
 
 
     b. Call witnesses to a Hearing, the outcome of which Hearing may materially affect their claims.
+
+
 > TODO: Rules on forming Creditor Committees; Rules of Creditor Voting; Rules on Creditor Classes.
 
 
@@ -929,6 +938,8 @@ Living Will
 
 Disclosure, discovery, and monitors
 ===================================
+
+
 > Disclosure, discovery and inspection are crucial to dispute resolution. Transparency is integral to the perception of fair treatment, which perception underlies acceptability of work-outs and determinations.
 
 
@@ -1011,6 +1022,8 @@ Reference
 
 
 The Tribunal may bring a reference of any dispute or any severable component of any dispute to a tribunal of competent jurisdiction within the State of the choice of law set out in the Rules. 
+
+
 > The idea here is that the tribunal would ask a national tribunal for an opinion on a point of national law.
 Proposals
 ---------
@@ -1052,6 +1065,8 @@ b. If it is grossly unfair as between creditors or creditor classes;
 
 
 c. If it is manifestly contrary to public policy or violates the principles of fundamental justice.
+
+
 > The above is from Article 4 on page 29 of the Interim Report of the Sovereign Insolvency Study Group.
 Remedies
 --------
