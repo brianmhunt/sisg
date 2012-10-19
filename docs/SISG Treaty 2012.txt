@@ -1,9 +1,6 @@
 ﻿Title: Statute of the Tribunal
 Notice: WORKING COPY — NOT FOR DISTRIBUTION — PRIVATE AND CONFIDENTIAL CONTENT NOT ENDORSED BY THE ILA, THE SISG OR ANY MEMBER THEREOF
 Disclaimer: This work is not a completed or approved document endorsed by the officers or members of the Sovereign Insolvency Study Group. The composition of any related or derivative work of the SISG may differ significantly from this document.
-Revision: E
-
-
 
 
 > This document contains a proposal for a treaty that may be enacted by states to create a mechanism that permits sovereign states to restructure their debts. This proposal builds on the “Option C” in Sovereign Insolvency Study Group ‘State insolvency: options for the way forward’ in the International Law Association Report of the Seventy-Fourth Conference (The Hague 2010) (International Law Association, London 2011) 978 (at pages 31ff) (which report of the study group will be referred to in this document as the "Interim Report"). The terms of Option C from the Interim Report are incorporated and referred to below.
@@ -27,7 +24,7 @@ Revision: E
 > * The binding of all parties by treaty to either:
 >     + a work-out through a majority vote by creditors;
 >     + a determination by an independent and impartial permanent tribunal.
-> * A Living Will where debtors may indicate:
+> * A Declaration Instructions where debtors may indicate:
 >     + the instruments involved;
 >     + any pre-conditionality for re-financing;
 >     + the mechanism for account and distribution of assets;
@@ -101,7 +98,7 @@ Revision: E
 > The objectives of the regime are akin to domestic bankruptcy, namely to reduce wastage (especially due to delay) and increase the fair treatment as between creditors and of the debtor.
 
 
-> The proposed tribunal operates on the basis of two primary instruments and an ancillary document: a treaty that creates the institutional foundations, functions and powers of the tribunal,  and a set of rules that dictate the procedure, and a “Living Will” that permits states to prescribe a position leading into a possible work-out in advance. These documents would be created as follows:
+> The proposed tribunal operates on the basis of two primary instruments and an ancillary document: a treaty that creates the institutional foundations, functions and powers of the tribunal,  and a set of rules that dictate the procedure, and a “Declaration Instructions” that permits states to prescribe a position leading into a possible work-out in advance. These documents would be created as follows:
 
 
 > * Treaty / Amendment to Articles: State agreement and ratification
@@ -110,7 +107,7 @@ Revision: E
 > * Rules of procedure: Administrative body for the Tribunal
 
 
-> * Living Will for a state: Filing by the State with the Tribunal
+> * Declaration Instructions for a state: Filing by the State with the Tribunal
 
 
 
@@ -188,13 +185,16 @@ Table: List of forums for the settlement of international disputes.
 The Tribunal provides facilities for mediation and adjudication of disputes between signatory states and its creditors.
 
 
+> Though the applicable rules may vary, it is envisioned that the Tribunal shall appoint a mediator in those cases where the parties cannot agree on one. The mediator shall not be a judge of the Tribunal.
+
+
 The Tribunal Rules are comprised of
 
 
 1. Rules of Procedure; and
 
 
-2. The Living Wills of each signatory state.
+2. The Declaration Instructions of each signatory state.
 
 
 
@@ -260,7 +260,7 @@ The States Parties to this Convention,
 **Accept that** uniform principles may require tailoring to the individual circumstances of each state;
 
 
-> This is the reason why this Treaty relies default rules ("Model Rules"), which for the most part may be modified by the living will published by each state, or grouping of states, as the case may be.
+> This is the reason why this Treaty relies default rules ("Model Rules"), which for the most part may be modified by the Declaration Instructions published by each state, or grouping of states, as the case may be.
 
 
 **Agree** upon the following:
@@ -277,10 +277,10 @@ Establishment
 -------------
 
 
-The International Tribunal for State Financial Administration is hereby constituted.
+The International Tribunal for State Financial Administration is hereby established.
 
 
-The purpose of the Tribunal shall be to facilitate the orderly restructuring of the financial obligations of states during periods of fiscal hardship by
+The objective of the Tribunal shall be to facilitate the orderly restructuring of the financial obligations of states during periods of fiscal hardship by
 
 
 1. relieving short-term obligations by way of a temporary stay on litigation over financial instruments against the debtor,
@@ -292,7 +292,10 @@ The purpose of the Tribunal shall be to facilitate the orderly restructuring of 
 3. providing an enforceable mechanism for binding all creditors by way of a vote of the majority;
 
 
-4. providing a fallback to a binding determination on the merits by an impartial an independent panel of arbiters. 
+4. providing a fallback to a binding determination on the merits by an impartial an independent panel of arbiters.
+
+
+> Once the judges have been appointed the Tribunal shall be constituted, which procedure shall fall under the Rules.
 
 
 Definitions
@@ -306,16 +309,34 @@ In this Treaty, and applicable Rules,
 :    refers to the process of the Tribunal commenced as of the date of Declaration and ending on the date of a judgment that has not been appealed within the prescribed period for appealing the judgment.
 
 
-“Debtor” and “Debtor State”
-:    refers to a state that has filed a Declaration;
+> Appeals are discussed further below.
 
 
-“Tribunal”
-:    refers to the tribunal created by this Treaty;
+“Agreement”
+:    refers to a Proposal that has been approved by the Tribunal, and has the same force and effect as a Judgment.
+
+
+
+
+“Creditor”
+:    refers to a person with title to Debt;
+
+
+> The definition of a “creditor” should be perfectly congruent with the definition of “debt”. It is noteworthy that derivatives may cloud the question of title versus beneficiary.
+
+
+“Class”
+:    refers to a set of Creditors who have common factual or legal interests that may be resolved together, as set out in the Declaration Instructions;
+
+
+> Division of creditors into classes can facilitate negotiations by aligning similar interests. Valid classes may be bondholders with a given priority, distinct legal issues, similar payment terms, common currency, or any other factors that may distinguish their interests from that of the balance of creditors.
+
+
+> For voting purposes, classes are mutually exclusive.
 
 
 “Debt”
-:    refers to a sum of a calculable amount payable by a debtor state in respect of a liquidated money demand, recoverable according to the legal process of the law chosen law by a debtor state in its Living Will or otherwise by agreement, as well as any other obligations of the debtor state that are specified as Debt in the Living Will;
+:    refers to a sum of a calculable amount payable by a debtor state in respect of a liquidated money demand, recoverable according to the legal process of the law chosen law by a debtor state in its Declaration Instructions or otherwise by agreement, as well as any other obligations of the debtor state that are specified as Debt in the Declaration Instructions;
 
 
 > The question of what is “debt” is non-trivial, and was deliberated at length by the authors of the SDRM.
@@ -333,24 +354,22 @@ In this Treaty, and applicable Rules,
 > 3. Foreign direct investment;
 
 
-> There is a question as to whether “domestic” and “foreign” debt can be defined and ought to be treated differently. The distinction between domestic and foreign debt can be the choice of law (domestic or foreign), choice of currency, or another distinction. This distinction may also be left to the debtor to set out in its living will.
+> There is a question as to whether “domestic” and “foreign” debt can be defined and ought to be treated differently. The distinction between domestic and foreign debt can be the choice of law (domestic or foreign), choice of currency, or another distinction. This distinction may also be left to the debtor to set out in its Declaration Instructions.
 
 
-“Creditor”
-:    refers to a person with title to Debt;
+> An open question is whether the principal of some or all debt shall be accelerated.
 
 
-> The definition of a “creditor” should be perfectly congruent with the definition of “debt”. It is noteworthy that derivatives may cloud the question of title versus beneficiary.
+> A state should not be able to change the definition of “debt” in its Declaration Instructions to create unjust preferences. There are a number of ways to protect against this possibility, including a “financial equivalence” clause (i.e. no debt should be excluded that is financially equivalent to a debt that is included in the restructuring) and a “debt” definition in the Rules that cannot be undone by Declaration Instructions. Creditors and debtors both have incentives to exclude debts, but this would undermine the comprehensiveness of the tribunal.
 
 
-“Class”
-:    refers to a set of Creditors who have common factual or legal interests that may be resolved together, as set out in the Living Will;
+> The above being said, the Declaration Instructions could be used to expand the definition of debt to e.g. future foreign direct investments. It would be unfair to creditors for this inclusion to have retroactive application.
 
 
-> Division of creditors into classes can facilitate negotiations by aligning similar interests. Valid classes may be bondholders with a given priority, distinct legal issues, similar payment terms, common currency, or any other factors that may distinguish their interests from that of the balance of creditors.
+“Debtor” and “Debtor State”
+:    refers to a state that has filed a Declaration;
 
 
-> For voting purposes, classes are mutually exclusive.
 
 
 “Declaration” and “Declare”
@@ -364,9 +383,9 @@ In this Treaty, and applicable Rules,
 :    refers to a determination of the Tribunal pursuant to this Treaty;
 
 
-“Living Will”:
-:    refers to the terms adopted by each state party and filed with the Tribunal through the process for filing Living Wills;
-> At any given point in time a state may or may not have a Living Will. The purpose of the Living Will is to provide a published document and structure for, without limitation:
+“Declaration Instructions”:
+:    refers to the terms adopted by each state party and filed with the Tribunal through the process for filing Declaration Instructionss;
+> At any given point in time a state may or may not have a Declaration Instructions. The purpose of the Declaration Instructions is to provide a published document and structure for, without limitation:
 
 
 > 1. the process of netting out liabilities;
@@ -396,14 +415,14 @@ In this Treaty, and applicable Rules,
 > 7. setting objective criteria for the when the state would file a Declaration.
 
 
-> Note that although the term “Living Will” mirrors the term arising out of US legislation, it was developed independently for this treaty - and the objectives are similar, so we have adopted that term from US legislation.
+> Note that although the term “Declaration Instructions” mirrors the term arising out of US legislation, it was developed independently for this treaty - and the objectives are similar, so we have adopted that term from US legislation.
 
 
 “Majority”
 :   refers to Creditors numbering more than 2/3 by value, or Creditors in a Class numbering more than 2/3 by value, or as may be set out in the Rules.
 
 
-> As a key operative provision it may not be prudent to give states too many degrees of freedom in their Living Will, otherwise the regime becomes unworkable. It is probably preferable to go with a single percentage for all states.
+> As a key operative provision it may not be prudent to give states too many degrees of freedom in their Declaration Instructions, otherwise the regime becomes unworkable. It is probably preferable to go with a single percentage for all states.
 
 
 “Member State”
@@ -418,7 +437,7 @@ In this Treaty, and applicable Rules,
 :    refers to a set of terms resolving all disputes between creditors and the debtor, which terms have been agreed to by a Majority and the Debtor;
 
 
-> A proposal is a Work-Out that has not been approved by the Tribunal.
+> A proposal is an Agreement that has not been approved by the Tribunal.
 
 
 > The proposal is more than resolving a particular dispute, but rather a comprehensive plan for restructuring the state’s debt, including fiscal adjustment (expenditure cuts, tax increases), debt relief by creditors etc.
@@ -434,8 +453,10 @@ In this Treaty, and applicable Rules,
 > The Rules are rules of procedure established by the Judicial Council and the Assembly.
 
 
-“Work-out”
-:    refers to a Proposal that has been approved by the Tribunal, and has the same force and effect as a Judgment.
+“Tribunal”
+:    refers to the tribunal created by this Treaty;
+
+
 
 
 Seats
@@ -472,6 +493,12 @@ Seats
 > Ibid.
 
 
+4. The Tribunal and its members (including employees and agents) shall be immune from prosecution and civil lawsuit in all States Parties for any actions taken in the furtherance of the objectives of the Tribunal.
+
+
+> The above probably ought to be clarified.
+
+
 Jurisdiction
 ============
 
@@ -479,10 +506,16 @@ Jurisdiction
 > Jurisdiction in the context of this treaty is the delegation of power to the tribunal to 
 
 
-> 1. determine a dispute by way of an award (subject-matter); and
+> 1. determine a dispute by way of an award (subject-matter);
 
 
-> 2. engage tools of state members to enforce awards (enforcement).
+> 2. engage institutions of state members to enforce awards (enforcement);
+
+
+> 3. Compel witnesses to testify and other persons to produce documents (discovery); and
+
+
+> 4. Recognize decisions of the Tribunal as final (res judicata).
 
 
 Jurisdiction to bind parties
@@ -518,10 +551,7 @@ Jurisdiction to bind parties
 
 > The Treaty or Rules should explicitly note those cases where an issue is outside the jurisdiction of the Tribunal.
  
-1. The adoption of this Treaty by a state shall be deemed to be consent by that state and all of its nationals to the jurisdiction of this Tribunal to resolve disputes over debt with remedies over such proposals and agreements.
-
-
-> The above is from article 25 of the ICSID treaty and Part V of the ICSID treaty. The jurisdictional subject-matter is framed as “disputes over Credit.
+1. State Parties consent by way of this treaty to grant exclusive jurisdiction over disputes between a Debtor and Creditors of the Debtor;
 
 
 2. The Tribunal shall be a permanent institution and shall have the powers to exercise its jurisdiction over persons and Member States where an application has been made to the Tribunal pursuant to this Treaty.
@@ -537,6 +567,9 @@ Jurisdiction to bind parties
 
 
 3. Creditors are deemed to consent and thereby attourn to the jurisdiction of the Tribunal where they file proof of claim, or they do not bring a motion before the Tribunal to declare the jurisdiction of the Tribunal ultra vires over their claims within the time prescribed by the Rules.
+
+
+> The above clause binds creditors who are not nationals of parties to this treaty.
 
 
 > Jurisdiction should be determined early and definitively. This is a balancing of the unfairness that occurs by binding individuals to a process that does not adequately protect their interests against the overall benefit of an expedient process that cannot be derailed by jurisdictional challenges.
@@ -568,10 +601,10 @@ Applicable law
 --------------
 
 
-1. The Tribunal shall decide a dispute in accordance international law, the law governing the Debt and the rules set out in the Model Rules and the Living Will applicable to the debtor state, if any.
+1. The Tribunal shall decide a dispute in accordance with international law, the law governing the Debt and the rules set out in the Model Rules and the Declaration Instructions applicable to the debtor state, if any.
 
 
-> The above is from article 42(1) of the ICSID treaty (p.23).
+> The above is from article 42(1) of the ICSID treaty.
 
 
 2. The provisions of paragraphs(1) and (2) shall not prejudice the power of the Tribunal to decide a dispute ex aequo et bono if the parties so agree.
@@ -580,7 +613,7 @@ Applicable law
 3. The Tribunal may not bring in a finding non liquet on the ground of silence or obscurity of the law.
 
 
-> The above is from article 42(2) of the ICSID treaty (p.23).
+> The above is from article 42(2) of the ICSID treaty, and similar to Article 4 of the French civil code (‘refus de juger’).
 
 
 Disclosure and discovery
@@ -593,7 +626,10 @@ Disclosure and discovery
 > The Treaty sets out the powers through the Administration section to create Rules related to disclosure and discovery. 
 
 
-1. The Tribunal shall have powers to make and enforce requests of states and Creditors for disclosure of documents and appearance for discovery.
+1. The Tribunal shall have powers to make requests of states and Creditors for disclosure of documents and appearance of witnesses for discovery.
+
+
+> The Tribunal requires the co-operation of States’ authorities to enforce decisions.
 
 
 2. If a State is requested by the Tribunal to provide a document or information in its custody, possession or control, which was disclosed to it in confidence by a State, intergovernmental organization or international organization, it shall seek the consent of the originator to disclose that document or information. If the originator is a State Party, it shall either consent to disclosure of the information or document or undertake to resolve the issue of disclosure with the Tribunal.
@@ -603,6 +639,12 @@ Disclosure and discovery
 
 
 > The above is more appropriate for a criminal proceeding. A civil analogy ought to be used in its place, and notably deference to the Rules so that discovery and disclosure obligations may be adapted over time.
+
+
+3. Authorities of States Parties shall make best efforts to comply with requests by the Tribunal. Where a request cannot be fulfilled, the Authorities shall explain the reason that the request could not be complied with.
+
+
+> The above should probably defer more precise requirements - timing, etc. - to the Rules.
 
 
 General principles of sovereign bankruptcy
@@ -619,7 +661,10 @@ Limits on Acts of State
 -----------------------
 
 
-The following shall not be construed by the Tribunal to impugn the principles set out in this section, except in accordance with the Treaty:
+> This article is meant to prevent states from creating laws or entering other agreements that undermine the operation of this Treaty. It also defines a scope within which Judgments must be construed.
+
+
+Except insofar as they may advance principles set out in this part, the following shall not impugn the application of this treaty:
 
 
 a. Any Direction;
@@ -643,14 +688,11 @@ f. Any existing bilateral or multilateral treaty;
 g. Any other existing or future instrument otherwise binding as between the State and any Creditors.
 
 
-> The above is designed to prevent states from creating laws or entering other agreements that undermine the operation of this Treaty. It also defines a scope within which Judgments must be construed.
+> Note that it’s important that this section does not undermine, and is not intended to prejudice, relationships such as secured credit, creditor classes and debtor-in-possession style refinancing priorities.
 
 
-> Note that it’s important that this section does not undermine, and is not intended to prejudice, relationships  such as secured credit, creditor classes and debtor-in-possession style refinancing priorities.
-
-
-Expediency
-----------
+Expeditiousness
+---------------
 
 
 The Tribunal shall operate with all due haste so as to minimize uncertainty and prolonged harm.
@@ -692,11 +734,11 @@ No Class shall be given treatment preferential to another Class except as one ma
 > Principles may be set out here or in the Rules with respect to priorities, within the bounds of which the Rules may modify.
 
 
-Stay on creditor executions
----------------------------
+Stay on creditor execution
+--------------------------
 
 
-> The stay on litigation to prevent unfair outcomes by preventing litigation by individual creditors pending a financial administration.
+> Stays prevent unfair outcomes by preventing a grab race and an unfair seizure of assets by individual creditors before a Debtor enters financial administration.
 
 
 1. A debtor state may by public notice stay all creditor executions in respect of plan claims for a period not more than 90 consecutive days in any one year. The stay is binding on all holders of plan claims and shall be treated as binding by the courts of each member state.
@@ -714,14 +756,23 @@ Stay on creditor executions
     c. more than 50 per cent by nominal principal amount of the holders of plan claims have approved the stay.
 
 
-> The particulars of the stay proposed in Article 5 of the Interim Report at page 33.
+> This stay only stays the seizure of assets. It does not stay accelerations of loans or bonds, the commencement of litigation for unpaid amounts, obtaining judgement or litigation generally.
 
 
 Voidable Preference
 -------------------
 
 
-Any priority shall be voidable where that priority deprives creditors of equal and fair treatment and:
+1. A voidable priority means a preferential payment that has been granted preference as the result of a transaction. A party whose benefits may be reduced as a result of the transaction may ask the Tribunal to annul the priority.
+
+
+> Where a priority is voidable, any party may ask the Court to put them in the position they would have been in had the transaction not been entered into.
+
+
+> Voidable priority in this context does not include secured transactions.
+
+
+2. Any priority shall be voidable where that priority deprives creditors of equal and fair treatment and:
 
 
 a. arises out of an act by the Debtor less than  one year prior to a declaration pursuant to this Convention; or
@@ -739,30 +790,27 @@ b. arises out of an intentional act of state that was intended to avoid obligati
 > If preferences can be voided, the benefit of the grab race is undone and therefore rendered pointless.
 
 
-Currency
---------
+Valuation
+---------
 
 
-The Rules may specify how differing currencies shall be determined.
+The Rules may specify how differing currencies shall be redenominated for the purpose of calculating benefits.
 
 
-> There is some issue with “amount”; a process for normalizing the values ought to be in the Rules. This process may be specified in the Living Will.
+> A process for normalizing the values ought to be in the Rules. This process may also be specified in the Declaration Instructions.
 
 
 Creditor majority interests
 ---------------------------
 
 
-1. An agreement shall be binding only upon the consent of the Debtor and Majority.
+An Agreement may be binding between all Creditors or a Class of Creditors and shall be binding only upon the consent of the Debtor and Majority of all Creditors or respective Class.
 
 
 > This Convention ought not to permit a minority of creditors to determine the outcome of a proceeding.
 
 
 > Note: minority interests do require protections; they may be protected by equal treatment and most-favoured class clauses, as well as transparency.
-
-
-2. This Article is without prejudice to the right of a State to adopt such Rules of creditor majority interests as it sees fit, so long as such adoption does not conflict with the foregoing.
 
 
 Preservation of contracts
@@ -786,7 +834,15 @@ Creditor Conflicts
 ------------------
 
 
-The Rules may provide that, and the extent to which, creditors are obliged to disclose and rights or obligations that are or may conflict with the objectives of the Tribunal or interests of the State.
+> This provision is meant to permit the Rules to oblige creditors to disclose interests that may conflict with the interests of the state
+
+
+The Rules may provide that, and the extent to which, a creditor is obliged to disclose any benefits that they may become entitled to, which benefits encourage the creditor to refuse to enter into an Agreement.
+
+
+> What shall be the consequences of finding a conflict? e.g. Shall the creditor be disentitled to vote?
+
+
 
 
 Composition and role of tribunal
@@ -797,16 +853,16 @@ Judges
 ------
 
 
-1. The Tribunal shall be composed of fifteen members, elected  regardless of their nationality from among persons enjoying the highest reputation for fairness and integrity and of recognized competence in international finance and international law.
+1. The Tribunal shall be composed of fifteen members, elected regardless of their nationality, except no three members shall be of the same state, from among persons enjoying the highest reputation for fairness and integrity and of recognized competence in international finance and international law.
 
 
-2. No two members shall be nationals of the same state.  In the Tribunal as a whole the representation of the principal legal systems of the world and equitable geographical distribution shall be assured.
+2. In the Tribunal as a whole the representation of the principal legal systems of the world and equitable geographical distribution shall be assured.
 
 
 > The above provision draws on Article 2 Statute of the ICJ and Article 2 ITLOS.
 
 
-3. Seven Members of the Tribunal shall sit in each permanent seat.
+3. The members shall be appointed for a term of eight years, which term is renewable.
 
 
 President and Vice-President
@@ -816,7 +872,7 @@ President and Vice-President
 1. The Tribunal shall elect its President and Vice-President for a non-renewable term of five years.
 
 
-2. The President and the Vice-President respectively are responsible for the overall management of the tribunal. The President and Vice-President shall rotate between the seats every 5 years, and be based in different locations.
+2. The President and the Vice-President respectively are responsible for the overall management of the tribunal.
 
 
 > See: Article 21 ICJ Statute.
@@ -880,7 +936,7 @@ Rules of procedure
 > The question of how disputes are resolved as between creditors is a matter for some debate..
 
 
-> How much leeway should be given to creditors taking different positions - Should similarly situated creditors be entitled to take difference positions? Insofar as it advances the resolution (eg by a significant portion of creditors wish to consent to a work-out), it is probably worthwhile.
+> How much leeway should be given to creditors taking different positions - Should similarly situated creditors be entitled to take difference positions? Insofar as it advances the resolution (eg by a significant portion of creditors wish to consent to an agreement), it is probably worthwhile.
 
 
 Standing
@@ -896,13 +952,22 @@ Standing
     a. The Debtor State;
 
 
-    b. A Creditor  or Creditor Committee representing more than 1/3rd of the value of a class of creditors;
+    b. A Creditor representing more than 1/3rd of the value of a class of creditors;
 
 
-    c. Interveners;
+    b. A Creditor Committee representing more than 1/3rd of the value of a class of creditors;
+
+
+    c. A Creditor who has been granted by the Monitor consent to have standing;
+
+
+> The Monitor may be a gatekeeper to weed out submissions that are frivolous, vexatious, or lack merit - and to prevent a deluge of repetitive submissions.
 
 
     d. The Monitor.
+
+
+> Shall the Court grant standing to any intervenors, such as experts or affected parties? On the one hand, intervenors reduce dissent by including dissenting parties in the discourse, however permitting intervenors can also significantly increase the number of submissions that must be heard and resulting delays.
 
 
 2. Any party with standing may:
@@ -914,20 +979,37 @@ Standing
     b. Call witnesses to a Hearing, the outcome of which Hearing may materially affect their claims.
 
 
+> Another possibility is to have a single judge rule on submissions, with appeal to the Tribunal.
+
+
 > TODO: Rules on forming Creditor Committees; Rules of Creditor Voting; Rules on Creditor Classes.
 
 
-Living Will
-===========
+3. Any party may, except where they have a creditor conflict:
 
 
-> This Part ought to draw on domestic insolvency Living Wills for financial institutions.
+    a. Review documents produced through the disclosure process;
+
+
+    b. Review transcripts of evidence.
+
+
+
+
+Declaration Instructions
+========================
+
+
+> This Part may draw on domestic insolvency Declaration Instructions for financial institutions.
+
+
+> It ought to set out the extent to which the Declaration Instructions may depart from the provisions of the Treaty/Rules.
 
 
 > TODO:  Provide the scope of authority for Wills and procedure for creating/amending/etc.
 
 
-> Model Will - Opt out of changes
+> Model Instructions - Opt out of changes
 
 
 > Process for changes
@@ -936,14 +1018,19 @@ Living Will
 > Administration union
 
 
+
+
 Disclosure, discovery, and monitors
 ===================================
 
 
-> Disclosure, discovery and inspection are crucial to dispute resolution. Transparency is integral to the perception of fair treatment, which perception underlies acceptability of work-outs and determinations.
+> Disclosure, discovery and inspection are crucial to dispute resolution. Transparency is integral to the perception of fair treatment, which perception underlies acceptability of Agreements and Judgments.
 
 
 > This part draws on “Part V - Investigation and prosecution” of the ICC statute.
+
+
+> The Tribunal may have an official monitor, or set of official monitors, that include the IMF and World Bank, or any other monitor that may be chosen by the Tribunal.
 
 
 Appointment of a Monitor
@@ -1021,7 +1108,7 @@ Reference
 ---------
 
 
-The Tribunal may bring a reference of any dispute or any severable component of any dispute to a tribunal of competent jurisdiction within the State of the choice of law set out in the Rules. 
+The Tribunal may bring a reference of any dispute or any severable component of any dispute to a state’s highest court within the State of the choice of law set out in the Rules, and the Tribunal shall be bound to the opinion of that court.
 
 
 > The idea here is that the tribunal would ask a national tribunal for an opinion on a point of national law.
@@ -1058,16 +1145,22 @@ Limitations on Proposals
 Unless otherwise specified in the Rules, a Proposal is invalid:
 
 
-a. To the extent that it increases the liabilities of a Creditor without its consent;
+a. To the extent that it increases or imposes the liabilities of a Creditor without its consent;
+
+
+> “Increases” probably includes “imposes”, in cases where there are no prior liabilities; it is better to be explicit about this.
 
 
 b. If it is grossly unfair as between creditors or creditor classes;
 
 
-c. If it is manifestly contrary to public policy or violates the principles of fundamental justice.
+c. If it is manifestly contrary to public policy in the jurisdiction of the choice of law or violates the principles of fundamental justice.
 
 
 > The above is from Article 4 on page 29 of the Interim Report of the Sovereign Insolvency Study Group.
+
+
+> The public policy may be that of the debtor, the lex loci contractus, or the jurisdiction of the choice of law.
 Remedies
 --------
 
@@ -1270,7 +1363,7 @@ Administration of the Tribunal
 4. Members of the Judicial Council other than the Chief Judge shall be appointed by the states.
 
 
-5. Two-thirds of the members of the Judicial council shall constitute a quorum.
+5. Two-thirds of the members of the Judicial council shall constitute a quorum, and a vote by 2/3rds or more of the quorum shall give effect to the subject matter being voted upon.
 
 
 6. Members of the Judicial Council may participate by electing a proxy or electronically.
@@ -1286,6 +1379,9 @@ Administration of the Tribunal
 
 
     c. promotion of the better administration of justice and effective use of resources.
+
+
+> Given the size of this plenary body, it might be better to have a general framework of Rules of Procedure with a delegation of authority to the Tribunal to adopt and amend its Rule Book.
 
 
 8. The Judicial Council shall convene annually for a general convention or at a special convention at such time and place as set out in the Rules.
@@ -1329,3 +1425,6 @@ Final clauses
 
 
 > 3. a method for expanding the jurisprudence and publicly indicating the direction the Tribunal may take on certain prospective issues.
+
+
+> Another important question is the threshold number of ratifications before the Treaty becomes effective
