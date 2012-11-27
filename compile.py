@@ -5,10 +5,11 @@ Requires:
 import logging, argparse, os, os.path, sys, subprocess, codecs, hashlib
 
 documents = {
-        'treaty': ["brianmhunt@gmail.com:/all/all/","SISG Treaty 2012"],
+        'treaty': ["brianmhunt@gmail.com:/all/all/", "SBG Treaty 2012"],
         }
 
-gcp_pw  = "ilvpmngnyuyuzyur"
+with open(".gcp-pw.txt") as gpw:
+    gcp_pw  = gpw.read()
 
 author  = "International Law Association"
 template= "pandoc.latex"
